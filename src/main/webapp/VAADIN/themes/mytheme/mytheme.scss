@@ -1,0 +1,61 @@
+
+/* Import the valo theme. */
+/* This only allows us to use the mixins defined in it and does not add any styles by itself. */
+@import "../valo/valo.scss";
+
+/* This contains all of your theme. */
+/* If somebody wants to extend the theme she will include this mixin. */
+@mixin mytheme {
+
+$v-focus-style: none;
+
+  /* Include all the styles from the valo theme */
+  @include valo;
+
+  /* Insert your theme rules here */
+
+        .nebula{
+           background-color:#d2e1dd;
+      }
+
+        .patina{
+           background-color:#699;
+      }
+
+        .wafer{
+           background-color:#e1d7d2;
+      }
+
+        .hopbush{
+           background-color:#c69;
+      }
+
+        .regent-grey{
+           background-color:#808c99;
+      }
+
+        .midnight-blue{
+           background-color:#036;
+      }
+
+        .dawn-pink{
+           background-color:#f2ece4;
+      }
+
+        .white{
+	   width: 100%;
+	   height: 100%;
+           background-color:#fff;
+      }
+
+        .transparent{
+           background-color: transparent;
+      }
+
+        .test{
+           background-color: rgba(255,255,255,0.5);
+      }
+
+$v-focus-style: none;
+
+}
